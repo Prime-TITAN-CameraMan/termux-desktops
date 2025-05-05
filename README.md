@@ -4,6 +4,8 @@ Setup XFCE4 desktop in Termux with hardware acceleration alongwith desktop audio
 ---
 <br>
 
+- [First Steps](#first-steps)
+
 ## First Steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices.
 > [!WARNING]
