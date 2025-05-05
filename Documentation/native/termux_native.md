@@ -49,7 +49,7 @@ There are a lot of applications, you can add more applications by adding tur rep
 
 - startxfce4_termux.sh
 ```
-hello
+wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/startxfce4_termux.sh
 ```
 
 - To start the desktop environment, run this
