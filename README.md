@@ -39,9 +39,8 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 - **Termux Native:** Simple and lightweight, but with limited capabilities compared to full Linux distributions.
 - **Proot-Distro:** Allows running full Linux distributions without root access, but may have some limitations.
 
----
+<hr style="width: 30%; height: 2px; background-color: gray; border: none; margin: auto;">
 <br>
-
 
 ## Comparison of Linux Environments on Android <a name=comparing-sheet></a>
 | Feature             | Proot          | Native         |
@@ -57,15 +56,10 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 
 Click on the different textsto see how you can install PRoot distributions of your choice.
 
-## [Debian]
+## [Debian](debian_proot.md)
 
+---
+<br>
 
 ## 💻 How to install Termux Native Desktop <a name=termux-native></a>
 ### You have all the information to install a native Termux Desktop [here](/Documentation/native/termux_native.md).
-
-
-
-
-
-
-
