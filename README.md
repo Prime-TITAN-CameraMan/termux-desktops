@@ -1,4 +1,4 @@
-# Termux X11 XFCE4 Desktops
+# Termux Desktops with Termux X11
 Install a full Linux desktop environment on your Android device with Termux X11 and also with hardware acceleration alongwith desktop audio functional
 
 ---
