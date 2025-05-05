@@ -4,7 +4,12 @@ Setup XFCE4 desktop in Termux with hardware acceleration alongwith desktop audio
 ---
 <br>
 
-- [First Steps](#first-steps)
+- **[First Steps](#first-steps)**
+- **[Native VS PRoot](#choose-linux)**
+- **[Native & PRoot Details Sheet](#comparing-sheet)**
+- **[How to install PRoot Distributions](#proot-distributions)**
+- **[How to install Native Termux Desktop](#termux-native)**
+<br>
 
 ## First Steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices.
