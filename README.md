@@ -30,7 +30,7 @@ pkg install -y git
 
 Termux native refers to running Linux commands directly within the Termux app without any additional virtualization or containerization. It provides a lightweight and straightforward way to access Linux utilities on your Android device.
 
-### [2. Proot-Distro](#proot-distro)
+### [2. Proot-Distro](#proot-distributions)
 
 Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementation of chroot, mount --bind, and binfmt_misc) to run a full Linux distribution inside a chroot environment. This approach allows you to install and use a wide range of Linux distributions without root access. However, it may have some limitations compared to native installations.
 
