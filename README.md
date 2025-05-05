@@ -55,7 +55,9 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 
 ## 🐧 How to install proot distributions: Debian <a name=proot-distributions></a>
 
-Click on the different icons to see how you can install the distribution of your choice. All of them have a video explaining the process 
+Click on the different textsto see how you can install PRoot distributions of your choice.
+
+## [Debian]
 
 
 ## 💻 How to install Termux Native Desktop <a name=termux-native></a>
