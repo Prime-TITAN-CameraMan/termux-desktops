@@ -1,4 +1,4 @@
-# Termux X11 XFCE54 Desktop
+# Termux X11 XFCE4 Desktops
 Setup XFCE4 desktop in Termux with hardware acceleration alongwith desktop audio functional. A whole setup of Native and PRoot
 
 ---
