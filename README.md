@@ -68,5 +68,5 @@ Click on the different text to see how you can install PRoot distributions of yo
 ---
 <br>
 
-## 💻 How to install Termux Native Desktop <a name=termux-native></a>
+## How to install Termux Native Desktop <a name=termux-native></a>
 ### You have all the information to install a native Termux Desktop [here](/Documentation/native/termux_native.md).
