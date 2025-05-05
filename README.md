@@ -56,7 +56,7 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 
 Click on the different textsto see how you can install PRoot distributions of your choice.
 
-## [Debian](Documentation/proot/debian_proot.md)
+### - [Debian](Documentation/proot/debian_proot.md)
 
 ---
 <br>
