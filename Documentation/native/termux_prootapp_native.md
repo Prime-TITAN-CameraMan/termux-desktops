@@ -81,9 +81,9 @@ Edit the script using following command
 ```
 nano proot_app.sh
 ```
-Edit the user `ptcm` to your user (inside Debian/PRoot)
+Edit the user `ptcm` to your user which you've created inside Debian
 
-Change all user or all text with `ptcm` to your user (inside Debian/PRoot)
+Change all user or all text with `ptcm` to your user 
 
 After that, save the script using **CTRL + X**, **Y** then **Enter**
 
