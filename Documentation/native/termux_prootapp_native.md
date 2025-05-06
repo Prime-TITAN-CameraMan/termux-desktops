@@ -1,4 +1,4 @@
-# PRoot Aplliplications on Native
+# PRoot Application on Native
 # Index
 - **[How it works](#how-work)**
 - **[First Steps](#app-first-steps)**
