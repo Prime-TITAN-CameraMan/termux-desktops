@@ -11,6 +11,8 @@ All of informations to install the desktop available here, check below
 - **[Download Scripts to Launch the Desktop](#script-download-termux)**
 - **[Troubleshooting and fixes](#fix-problem-termux)**
 
+<br>
+
 ## First Steps <a name=first-steps-termux></a>
 Mame sure you've both Termux and Termux X11 installed. If didn't, install it from the link:
 > [!WARNING]
