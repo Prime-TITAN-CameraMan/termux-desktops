@@ -24,7 +24,6 @@ Install Some Essential Packages In Termux at First:
 pkg update -y
 pkg install -y x11-repo
 pkg install -y termux-x11-nightly
-pkg install -y tur-repo
 pkg install -y pulseaudio
 pkg install -y proot-distro
 pkg install -y wget
