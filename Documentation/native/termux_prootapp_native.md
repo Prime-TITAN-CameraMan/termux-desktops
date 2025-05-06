@@ -77,6 +77,9 @@ In Termux, run the following command
 cd ~
 wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/proot_app.sh
 ```
+> [!NOTE]
+> By default the script only works with the user `ptcm`. So, do the following steps to fix it.
+
 Edit the script using following command
 ```
 nano proot_app.sh
@@ -87,12 +90,15 @@ Change all user or all text with `ptcm` to your user
 
 After that, save the script using **CTRL + X**, **Y** then **Enter**
 
-<br>
+---
 
 Give executive permission to the script using following command
 ```
 chmod +x proot_app.sh
 ```
+
+<br>
+
 Now run the desktop. Create a new session and run any desired application (which is inside PRoot) on native Termux using following command, then open Termux X11
 ```
 ./proot_app.sh application
