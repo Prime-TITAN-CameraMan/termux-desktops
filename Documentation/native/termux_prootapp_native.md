@@ -58,7 +58,7 @@ Add the following line under `# User privilege specification` and root
 ```
 yourusername ALL=(ALL:ALL) ALL
 ```
-Then use CTRL+X, Y then Enter.
+Then use **CTRL+X**, **Y** then **Enter**.
 
 <br>
 
@@ -72,4 +72,33 @@ Everything done now check below.
 <br>
 
 ## Download the Scripts to run the application in PRoot and display on native <a name=app-script-download></a>
-Later Too
+In Termux, run the following command
+```
+cd ~
+wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/proot_app.sh
+```
+Edit the script using following command
+```
+nano proot_app.sh
+```
+Edit the user `ptcm` to your user (inside Debian/PRoot)
+
+Change all user or all text with `ptcm` to your user (inside Debian/PRoot)
+
+After that, save the script using **CTRL + X**, **Y** then **Enter**
+
+<br>
+
+Give executive permission to the script using following command
+```
+chmod +x proot_app.sh
+```
+Now run the desktop. Create a new session and run any desired application (which is inside PRoot) on native Termux using following command, then open Termux X11
+```
+./proot_app.sh application
+```
+or
+```
+bash ~/proot_app.sh application
+```
+Replace the `application` with actual application name.
