@@ -1,7 +1,7 @@
 # Termux Native (No PRoot)
 # Index
 - **[First Steps](#first-steps-termux)**
-- **[Install Essent6ial Applications](#apps-install-termux)**
+- **[Install Essential Applications](#apps-install-termux)**
 - **[Download Scripts to Launch the Desktop](#script-download-termux)**
 - **[Troubleshooting and fixes](#fix-problem-termux)**
 
