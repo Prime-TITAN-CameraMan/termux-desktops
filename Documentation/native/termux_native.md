@@ -1,10 +1,4 @@
-# Termux Native XFCE4 Desktop
-
-All of informations to install the desktop available here, check below
-
----
-<br>
-
+# Termux Native (No PRoot)
 # Index
 - **[First Steps](#first-steps-termux)**
 - **[Install Essent6ial Applications](#apps-install-termux)**
