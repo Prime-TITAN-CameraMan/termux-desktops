@@ -10,7 +10,7 @@ Install a full Linux desktop environment on your Android device with Termux X11 
 - **[Native & PRoot Details Sheet](#comparing-sheet)**
 - **[How to install PRoot Distributions](#proot-distributions)**
 - **[How to install Native Termux Desktop](#termux-native)**
-- **[How to Install Native Termux Desktop Fully Automated just with one-click](#termux-native-auto)**
+- **[How to Install Native Termux Desktop** (Fully Automated) **just with one-click](#termux-native-auto)**
 - **[How to use Applications from PRoot on Native](#termux-prootapp-native)**
 - **[How to fix Termux Storage, Microphone and Other Services Problem in Desktop](#termux-problem-fix)**
 
