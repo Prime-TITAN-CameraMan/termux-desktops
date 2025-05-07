@@ -5,6 +5,7 @@
 - **[Installing XFCE4 Desktop & Application](#desktop-debian)**
 - **[Running The Desktop](#run-debian)**
 - **[Download Desktop Startup Scripts](#script-debian)**
+- **[Necceessary Informations](#imp-proot-info)**
 
 ---
 <br>
@@ -76,10 +77,17 @@ Make sure you've logged in debian before proceed, if didn't use `proot-distro lo
 
 Login to your user and run following command to install XFCE4 desktop:
 ```
-sodo apt install -y xfce4
+sudo apt install -y xfce4
 ```
 > [!NOTE]
 > This process will take a bit long. Make sure to do not AFK, after it got downloaded during installation it'll promt some questions you need to answer that using numbers on keyboard.
+
+**(Optional)** Install following packages for berttter functionality:
+```
+sudo apt install -y xfce4-goodies
+sudo apt install -y xfce4-terminal
+```
+
 Install your desired applications
 
 For example, Installing Firefox:
@@ -91,7 +99,7 @@ For Chromium:
 apt install -y chromium
 ```
 > [!NOTE]
-> If it got fails for administrative privilleges, use `sudo` at first then type command to avoid it.
+> If it got fails for without administrative privilleges, use `sudo` at first then type command to avoid it.
 
 It's done, now check below for next steps.
 
@@ -121,7 +129,22 @@ chmod +x startxfce4_debian.sh
 > [!NOTE]
 > By default this script works with the user `ptcm`. If you create a user with a different name in proot-distro, please edit the script change the user where it says `ptcm` inside the scripts.
 > Use `nano startxfce4_debian.sh` to edit the script.
+> Make sure to install the scripts in Termux, not PRoot.
 ```
 cd ~
 wget Metalic
 ```
+
+---
+<br>
+
+## Some Additional Informations <a name=imp-proot-info></a>
+### Troubleshooting & Fixes
+If you are having any kind of problem with Termux, for example, if it's crashing, check and fix it from [here](/Documentation/native/termux_native.md#fix-problem-termux).
+
+<br>
+
+### Recommendation
+It's recommended to use Termux Native XFCE4 Desktop, because PRoot is way more slower than Native. But, in native you don't have much compatiblity. But, there's a workaround for it.
+
+**Workaround:** Use display exporting for using PRoot applications on Native. All informations and process regarding it are available [here](/Documentation/native/termux_prootapp_native.md)
