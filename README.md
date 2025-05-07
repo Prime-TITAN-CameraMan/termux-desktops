@@ -9,7 +9,10 @@ Install a full Linux desktop environment on your Android device with Termux X11 
 - **[Native & PRoot Details Sheet](#comparing-sheet)**
 - **[How to install PRoot Distributions](#proot-distributions)**
 - **[How to install Native Termux Desktop](#termux-native)**
+- **[How to Install Native Termux Desktop Fully Automated just with one-click](#termux-native-auto)**
 - **[How to use Applications from PRoot on Native](#termux-prootapp-native)**
+- **[How to fix Termux Storage, Microphone and Other Services Problem in Desktop](#termux-problem-fix)**
+
 <br>
 
 ## First Steps <a name=first-steps></a>
@@ -19,7 +22,7 @@ We are going to use Termux and Termux X11 in order to have a full Linux Desktop 
 - [Install Termux from GitHub repository](https://github.com/termux/termux-app/releases)
 - [Install Termux X11 from last successful builds of GitHub repository](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
 
-Install Some Essential Packages In Termux at First:
+Install Some Essential Packages In Termux at First before prceeding:
 ```
 pkg update -y
 pkg install -y x11-repo
@@ -74,10 +77,27 @@ Click on the different text to see how you can install PRoot distributions of yo
 ---
 <br>
 
+## How to Install Native Termux Desktop Fully Automated <a name=termux-native-auto></a>
+### You have all the information to install a native Termux Desktop automatically [here](/Documentation/native/termux_native_automated.md).
+
+---
+<br>
+
 ## How to use PRoot applications on native Termux <a name=termux-prootapp-native></a>
-### All informations and process regarding PRoot applications on native Termux are available [here](/Documentation/native/termux_prootapp_native.md).
+### All informations and process regarding PRoot applications on native Termux are available [here](/Documentation/native/termux_prootapp_native.md)
 
+---
+<br>
 
+## How to fix Termux Storage, Microphone and Other Services Problem in Termux Desktop <a name=termux-problem-fix></a>
+### All informations and process are acaivailable [here](/Documentation/termux/problem-fix.md)
 
+---
+<br>
 
+## Credits & Inspiration
 
+**This project is inspired by:**
+
+- [@sabamdarif](https://github.com/sabamdarif)'s [termux-desktop](https://github.com/sabamdarif/termux-desktop) repository  
+- [@LinuxDroidMaster](https://github.com/LinuxDroidMaster)'s [Termux-Desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) repository
