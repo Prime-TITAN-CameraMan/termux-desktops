@@ -22,6 +22,9 @@ Install a full Linux desktop environment on your Android device with Termux X11 
 - 50MB - 100MB of internet data for base Termux packages
 - Minimum 150MB of storage; Recommended 300MB of storage
 
+---
+<br>
+
 ## First Steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices.
 > [!WARNING]
