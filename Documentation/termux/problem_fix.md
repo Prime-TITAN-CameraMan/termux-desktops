@@ -9,7 +9,7 @@
 
 <br>
 
-## Firat Steps <a name=fix-first></a>
+## First Steps <a name=fix-first></a>
 1. [Install Termux API from their GitHub repository](https://github.com/termux/termux-api/releases)
 2. Open Termux, run the following commands:
 ```
