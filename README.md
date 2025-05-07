@@ -97,7 +97,7 @@ Click on the different text to see how you can install PRoot distributions of yo
 <br>
 
 ## How to fix Termux Storage, Microphone and Other Services Problem in Termux Desktop <a name=termux-problem-fix></a>
-### All informations and process are available [here](/Documentation/termux/problem-fix.md)
+### All informations and process are available [here](/Documentation/termux/problem_fix.md)
 
 ---
 <br>
