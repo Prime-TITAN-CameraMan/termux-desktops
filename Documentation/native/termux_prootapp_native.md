@@ -30,10 +30,12 @@ Install the following packages in Termux
 pkg update -y
 pkg install -y wget
 pkg install -y x11-repo
+pkg install -y proot-distro
 pkg install -y pulseaudio
 ```
 Login to the PRoot env (e.g. Debian)
 ```
+proot-distro install debian
 proot-distro login debian
 ```
 Install following packages inside Debian
