@@ -132,8 +132,9 @@ chmod +x startxfce4_debian.sh
 > Make sure to install the scripts in Termux, not PRoot.
 ```
 cd ~
-wget Metalic
+wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/proot_debian/startxfce4_debian.sh
 ```
+Now run the script in Termux native (Not In PRoot), whenever you want to use the desktop. 
 
 ---
 <br>
