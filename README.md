@@ -4,6 +4,7 @@ Install a full Linux desktop environment on your Android device with Termux X11 
 ---
 <br>
 
+- **[Requirements](#Later)**
 - **[First Steps](#first-steps)**
 - **[Native VS PRoot](#choose-linux)**
 - **[Native & PRoot Details Sheet](#comparing-sheet)**
@@ -14,6 +15,12 @@ Install a full Linux desktop environment on your Android device with Termux X11 
 - **[How to fix Termux Storage, Microphone and Other Services Problem in Desktop](#termux-problem-fix)**
 
 <br>
+
+## Basic Termux Requirements
+- Android version must be 8 or higher
+- Minimum 512MB of RAM; Recommended 1.5GB of RAM
+- 50MB - 100MB of internet data for base Termux packages
+- Minimum 150MB of storage; Recommended 300MB of storage
 
 ## First Steps <a name=first-steps></a>
 We are going to use Termux and Termux X11 in order to have a full Linux Desktop in our Android devices.
