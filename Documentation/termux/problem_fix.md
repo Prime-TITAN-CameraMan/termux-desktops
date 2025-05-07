@@ -10,7 +10,7 @@
 <br>
 
 ## First Steps <a name=fix-first></a>
-1. [Install Termux API from their GitHub repository](https://github.com/termux/termux-api/releases)
+1. Install **[Termux API](https://github.com/termux/termux-api/releases)** from their official **[GitHub repository](https://github.com/termux/termux-api/releases)**
 2. Open Termux, run the following commands:
 ```
 pkg update -y
@@ -65,7 +65,7 @@ Run the following command in Termux and **Grant the Location permission**:
 termux-location
 ```
 > [!NOTE]
-> Granting Location permission cam surely increase battery consumption than usual
+> Granting Location permission can surely increase battery consumption than usual
 ---
 <br>
 
