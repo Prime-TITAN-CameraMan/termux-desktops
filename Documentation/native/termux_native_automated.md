@@ -1,7 +1,7 @@
 # Termux Native Automated Setup (No PRoot)
 # Index
 - **[Key Features](#key-features)**
-- **[Requermirements](#termux-needed)**
+- **[Requirements](#termux-needed)**
 - **[Installtation Steps](#termux-auto-install)**
 - **[Additional Informations & Troubleshooting](#termux-auto-fix)**
 
@@ -19,14 +19,14 @@
 ## Requirments <a name=termux-needed></a>
 > [!WARNING]
 > (NEVER USE THE GOOGLE PLAY STORE VERSION OF TERMUX AS IT IS OUTDATED)
-- [Install Termux from their official GitHub repository](https://github.com/termux/termux-app/releases)
-- [Install Termux X11 from last successful builds of their official GitHub repository](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
-- **(Optional)** [Install Termux API from their official GitHub repository](https://github.com/termux/termux-api/releases)
+- [Install **Termux** from their official GitHub repository](https://github.com/termux/termux-app/releases)
+- [Install **Termux X11** from last successful builds of their official GitHub repository](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
+- **(Optional)** [Install **Termux API** from their official GitHub repository](https://github.com/termux/termux-api/releases)
 #### Specs Requirements
 - Android version must be 8+
-- Termux
-- Termux X11
-- Termux API (Optional, only for additional features)
+- [Termux](https://github.com/termux/termux-app/releases)
+- [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
+- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
 - Minimum 2GB of RAM; Recommended 3GB of RAM
 - 500MB - 700MB of internet
 - Minimum 4GB of storage; Recommended 5.50GB of storage
