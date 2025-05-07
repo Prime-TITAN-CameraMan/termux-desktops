@@ -1,4 +1,4 @@
-# Termux Desktops with Termux X11
+# Termux Desktops: Full Linux GUI on Android with Hardware Acceleration
 Install a full Linux desktop environment on your Android device with Termux X11 and also with hardware acceleration alongwith desktop audio functional
 
 ---
