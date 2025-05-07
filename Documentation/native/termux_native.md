@@ -1,10 +1,23 @@
 # Termux Native (No PRoot)
 # Index
+- **[Requirements](#termux-needs)**
 - **[First Steps](#first-steps-termux)**
 - **[Install Essential Applications](#apps-install-termux)**
 - **[Download Scripts to Launch the Desktop](#script-download-termux)**
 - **[Troubleshooting and fixes](#fix-problem-termux)**
 
+<br>
+
+## Requrements <a name=termux-needs></a>
+- Android version must be 8+
+- [Termux](https://github.com/termux/termux-app/releases)
+- [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
+- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
+- Minimum 2GB of RAM; Recommended 3GB of RAM
+- 500MB - 700MB of internet
+- Minimum 4GB of storage; Recommended 5.50GB of storage
+
+---
 <br>
 
 ## First Steps <a name=first-steps-termux></a>
