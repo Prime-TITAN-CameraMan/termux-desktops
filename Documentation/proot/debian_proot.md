@@ -141,7 +141,7 @@ Now run the script in Termux native (Not In PRoot), whenever you want to use the
 
 ## Some Additional Informations <a name=imp-proot-info></a>
 ### Troubleshooting & Fixes
-If you are having any kind of problem with Termux, for example, if it's crashing, check and fix it from [here](/Documentation/native/termux_native.md#fix-problem-termux).
+If you are having any kind of problem with Termux (for example, if it's crashing) check and fix it from [here](/Documentation/native/termux_native.md#fix-problem-termux).
 
 <br>
 
