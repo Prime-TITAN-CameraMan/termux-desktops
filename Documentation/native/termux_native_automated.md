@@ -3,7 +3,7 @@
 - **[Key Features](#key-features)**
 - **[Requirements](#termux-needed)**
 - **[Installtation Steps](#termux-auto-install)**
-- **[Additional Informations & Troubleshooting](#termux-auto-fix)**
+- **[Troubleshooting & Fixes](#termux-auto-fix)**
 
 <br>
 
@@ -35,10 +35,30 @@
 <br>
 
 ## Installtation Steps <a name=termux-auto-install></a>
-Later
+Run the following commands in Termux:
+```
+pkg update -y
+pkg install -y wget
+```
+Download TCM's automated setup script:
+```
+cd ~
+wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/termux_native_xfce4_setup.sh
+```
+Give executive permission to the script:
+```
+chmod +x termux_native_xfce4_setup.sh
+```
+Run the script:
+```
+bash ~/termux_native_xfce4_setup.sh
+```
+
+> [!NOTE]
+> This installation will take some time. So, be patience. Also it'll promt to enter a number for your desired browser installation.
 
 ---
 <br>
 
-## Additional Informations, Troubleshooting & fixes <a name=termux-auto-fix></a>
-Later
+## Troubleshooting & fixes <a name=termux-auto-fix></a>
+If you are having any kind of problem with Termux, (for example, if it's crashing) check and fix it from [here](/Documentation/native/termux_native.md#fix-problem-termux).
