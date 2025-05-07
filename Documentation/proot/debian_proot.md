@@ -1,7 +1,7 @@
 # Index
 ## PRoot-Distro (Debian)
 
-- **[Requirements](#Later)**
+- **[Requirements](#termux-needs)**
 - **[First Steps](#first-steps-debian)**
 - **[Installing XFCE4 Desktop & Application](#desktop-debian)**
 - **[Running The Desktop](#run-debian)**
@@ -11,14 +11,14 @@
 ---
 <br>
 
-## Requirements
+## Requirements <a name=termux-needs></a>
 - Android version must be 8+
 - [Termux](https://github.com/termux/termux-app/releases)
 - [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
 - [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
 - Minimum 2GB of RAM; Recommended 4GB of RAM
 - 1.2GB - 1.6GB of internet
-- Minimum 4.5GB of storage; Recommended 6GB of storage
+- Minimum 4GB of storage; Recommended 6GB of storage
 
 ---
 <br>
