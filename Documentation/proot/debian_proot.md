@@ -45,7 +45,7 @@ sudo apt install -y pulseaudio
 sudo apt install -y dbus-x11
 ```
 
-#### Create an user with Sudo privolileges
+#### Create an user with Sudo privileges
 1. Install the following package:
 ```
 sudo apt install -y nano
