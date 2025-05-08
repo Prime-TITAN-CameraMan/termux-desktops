@@ -6,7 +6,7 @@
 - **[Installing XFCE4 Desktop & Application](#desktop-debian)**
 - **[Running The Desktop](#run-debian)**
 - **[Download Desktop Startup Scripts](#script-debian)**
-- **[Necceessary Informations](#imp-proot-info)**
+- **[Necessary Informations](#imp-proot-info)**
 
 ---
 <br>
