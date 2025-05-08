@@ -70,6 +70,6 @@ termux-location
 <br>
 
 ## How to fix other Access problem <a name=other></a>
-Having problem to get Location access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Other access in Termux and Termux Desktops? Dont't worry—
 
 Head over to the [Termux API official repository](https://github.com/termux/termux-api), then find your access command and run it in Termux, and grant the permission.
