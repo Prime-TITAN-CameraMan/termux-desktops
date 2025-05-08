@@ -10,6 +10,7 @@
 ## Key Features <a name=key-features></a>
 - **Easy Setup:** Easy 1-click installation process.
 - **Hardware Acceleration:** Performance boost using your supported hardware.
+- **Audio Support:** Desktop audio functional
 - **GUI:** Termux X11
 - **One-Click Browser Installation:** Firefox, Chromium
 
