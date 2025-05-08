@@ -1,7 +1,7 @@
 # Termux Desktops: Full Linux GUI on Android with Hardware Acceleration
 Install a full Linux desktop environment on your Android device with Termux X11 and also with hardware acceleration alongwith desktop audio functional
 
-The repository is based on—
+The project is based on—
 - **PRoot:** Debian only, because it's beginner-friendly
 - **DE:** XFCE4 only, because it's lightweight with full desktop setup.
 - **Hardware Acceleration:** HW is inbuilt inside scripts. So, whenever you run the script for starting the desktop, it'll automatically enable hardware acceleration too. So, I didn't made any documentation for it.
