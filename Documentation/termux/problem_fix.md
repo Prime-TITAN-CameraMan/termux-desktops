@@ -21,7 +21,7 @@ pkg install -y termux-api
 <br>
 
 ## How to fix Storage problem <a name=storage></a>
-Having problem to get Android native Storage access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Android native Storage access in Termux and Termux Desktops? Don't worry—
 
 Run the following command in termux and **Grant the Storage permssion**:
 ```
@@ -32,7 +32,7 @@ termux-setup-storage
 <br>
 
 ## How to fix Microphone probem <a name=microphone></a>
-Having problem to get Microphone access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Microphone access in Termux and Termux Desktops? Don't worry—
 
 Run the following command in Termux and **Grant the Microphone permission**:
 ```
@@ -45,7 +45,7 @@ termux-microphone-record -d
 <br>
 
 ## How to fix Camera problem <a name=camera></a>
-Having problem to get Camera access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Camera access in Termux and Termux Desktops? Don't worry—
 
 Run the following command in Termux and **Grant the Camera permission**:
 ```
@@ -58,7 +58,7 @@ termux-camera-photo -c 0 photo.jpg
 <br>
 
 ## How to fix Location problem <a name=location></a>
-Having problem to get Location access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Location access in Termux and Termux Desktops? Don't worry—
 
 Run the following command in Termux and **Grant the Location permission**:
 ```
@@ -70,6 +70,6 @@ termux-location
 <br>
 
 ## How to fix other Access problem <a name=other></a>
-Having problem to get Other access in Termux and Termux Desktops? Dont't worry—
+Having problem to get Other access in Termux and Termux Desktops? Don't worry—
 
 Head over to the [Termux API official repository](https://github.com/termux/termux-api), then find your access command and run it in Termux, and grant the permission.
