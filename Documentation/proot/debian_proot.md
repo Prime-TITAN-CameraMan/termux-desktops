@@ -95,7 +95,7 @@ sudo apt install -y xfce4
 > [!NOTE]
 > This process will take a bit long. Make sure to do not AFK, after it got downloaded during installation it'll promt some questions you need to answer that using numbers on keyboard.
 
-**(Optional)** Install following packages for berttter functionality:
+**(Optional)** Install following packages for better functionality:
 ```
 sudo apt install -y xfce4-goodies
 sudo apt install -y xfce4-terminal
@@ -120,7 +120,7 @@ It's done, now check below for next steps.
 <br>
 
 ## Running The Desktop <a name=run-debian></a>
-Exit from Debian, and run following commands:
+Exit from Debian using `exit` 1-2 times, and run following commands:
 ```
 pkg update
 pkg install -y x11-repo
