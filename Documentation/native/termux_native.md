@@ -34,7 +34,13 @@ pkg install x11-repo
 pkg install termux-x11-nightly
 pkg install pulseaudio
 ```
-Then you have to install the desktop you prefer, I only tested and given XFCE4:
+Then remove conflicting packages and install the main packages:
+**(Part of Hardware Acceleration)**
+```
+apt remove -y vulkan-loader-generic
+pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
+```
+Then you have to install XFCE4 desktop:
 > [!NOTE]
 > XFCE4 is really small and efficient which makes it take the least amount of resources compared to other desktop environments.
 ```
