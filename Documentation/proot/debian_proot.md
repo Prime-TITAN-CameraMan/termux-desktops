@@ -33,11 +33,16 @@ pkg install -y proot-distro
 ```
 proot-distro install debian
 ```
-3. Login into debian:
+3. Remove conflicting packages and install main one:
+```
+apt remove -y vulkan-loader-generic
+pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
+```
+4. Login into debian:
 ```
 proot-distro login debian
 ```
-4. Run the following commands:
+5. Run the following commands:
 ```
 apt update
 apt install -y sudo
