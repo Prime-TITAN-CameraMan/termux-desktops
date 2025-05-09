@@ -25,7 +25,7 @@ echo -e "${BOLD_GREEN}Packages Updated and Installed Successfully!${RESET}"
 sleep 2
 
 echo -e "${BOLD_YELLOW} Configuring HW Acceleration: Removing conflicting packages and reinstalling the working packages${RESET}"
-pkg remove -y virglrenderer virglrenderer-mesa-zink > /dev/null 2>&1
+apt remove -y virglrenderer virglrenderer-mesa-zink vulkan-loader-generic > /dev/null 2>&1
 pkg clean -y > /dev/null 2>&1
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android > /dev/null 2>&1
 
