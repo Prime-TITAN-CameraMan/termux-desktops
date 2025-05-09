@@ -13,7 +13,7 @@ The project is based on—
 - **[First Steps](#first-steps)**
 - **[Native VS PRoot](#choose-linux)**
 - **[Native & PRoot Details Sheet](#comparing-sheet)**
-- **[How to install PRoot Distributions](#proot-distributions)**
+- **[How to install PRoot Distribution Desktop](#proot-distributions)**
 - **[How to install Native Termux Desktop](#termux-native)**
 - **[How to Install Native Termux Desktop (Fully Automated) just with one-click](#termux-native-auto)**
 - **[How to use Applications from PRoot on Native](#termux-prootapp-native)**
@@ -79,7 +79,7 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 ---
 <br>
 
-## How to install proot distributions: Debian <a name=proot-distributions></a>
+## How to install proot distribution desktop: Debian <a name=proot-distributions></a>
 Click on the different text to see how you can install PRoot distributions of your choice.
 - **[Debian](/Documentation/proot/debian_proot.md)**
 
