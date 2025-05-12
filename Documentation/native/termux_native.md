@@ -33,6 +33,7 @@ pkg update
 pkg install x11-repo
 pkg install termux-x11-nightly
 pkg install pulseaudio
+pkg install tur-repo
 ```
 Then remove conflicting packages and install the main packages:
 **(Part of Hardware Acceleration)**
@@ -48,17 +49,14 @@ pkg install -y xfce4
 ```
 If you want to install Firefox: <a name=apps-install-termux></a>
 ```
-pkg install -y tur-repo
 pkg install -y firefox
 ```
 If you want to install Chromium:
 ```
-pkg install -y tur-repo
 pkg install -y chromium
 ```
 If you want to install VS Code:
 ```
-pkg install -y tur-repo
 pkg install -y code-oss
 ```
 There are a lot of applications, you can add more applications by adding tur repository using `pkg install -y tur-repo` in Termux.
