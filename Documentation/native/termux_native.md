@@ -80,7 +80,7 @@ bash ~/startxfce4_termux.sh
 <br>
 
 ## Troubleshooting and fixes <a name=fix-problem-termux></a>
-### Termux X11 randomly getting killed/shutdown
+### Termux X11 randomly getting killed/shutdown on Android 12 & above
 
 You need to disable Phantom Processes using [this guide](https://github.com/EDLLT/TermuxDisablePhantomProcess)
 
@@ -91,6 +91,8 @@ If Termux X11 STILL abruptly gets killed even after disabling Phantom Processes 
 ```
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
 ```
+### Termux X11 randomly getting freezed on Android 11 or below
+You need to give **Background Activity** permission to Termux, in order to use the desktop without any issues
 
 ### Termux:X11's resolution is too big/too small. Cursor issues and cursor's speed is too fast/slow
 
