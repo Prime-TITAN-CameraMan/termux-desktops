@@ -75,6 +75,8 @@ wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/ref
 ```
 bash ~/startxfce4_termux.sh
 ```
+> [!WARNING]
+> It can cause slight screen tearing as the V-Sync in turned off, while the tearing is minimal or unnoticable if you've a moderate-good GPU
 
 ---
 <br>
