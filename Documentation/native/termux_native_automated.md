@@ -58,6 +58,9 @@ bash ~/termux_native_xfce4_setup.sh
 > [!NOTE]
 > This installation will take some time. So, be patience. Also it'll promt to enter a number for your desired browser installation.
 
+> [!WARNING]
+> It can cause slight screen tearing as the V-Sync in turned off, while the tearing is minimal or unnoticable if you've a moderate-good GPU
+
 ---
 <br>
 
