@@ -50,8 +50,13 @@ Give executive permission to the script:
 ```
 chmod +x termux_native_xfce4_setup.sh
 ```
+Install `dos2unix`
+```
+pkg install -y dos2unix
+```
 Run the script:
 ```
+dos2unix termux_native_xfce4_setup.sh
 bash ~/termux_native_xfce4_setup.sh
 ```
 
