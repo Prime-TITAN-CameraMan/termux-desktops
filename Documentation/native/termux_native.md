@@ -36,8 +36,7 @@ pkg install -y termux-x11-nightly
 pkg install -y pulseaudio
 pkg install -y tur-repo
 ```
-Then remove conflicting packages and install the main packages:
-**(Part of Hardware Acceleration)**
+Install hardware acceleration related packages:
 ```
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
 ```
