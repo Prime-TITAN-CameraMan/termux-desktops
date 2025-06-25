@@ -15,10 +15,10 @@
 - Android version must be 8+
 - [Termux](https://github.com/termux/termux-app/releases)
 - [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
-- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
+- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional access, such as microphone)
 - Minimum 2GB of RAM; Recommended 4GB of RAM
 - 1.2GB - 1.6GB of internet
-- Minimum 4GB of storage; Recommended 6GB of storage
+- Minimum 4.5GB of storage; Recommended 6GB of storage
 
 ---
 <br>
@@ -27,15 +27,24 @@
 1. Open Termux and install PRoot Distro:
 ```
 pkg update
+pkg upgrade -y
 pkg install -y proot-distro
 ```
 2. Install Debian distribution:
 ```
 proot-distro install debian
 ```
-3. Remove conflicting packages and install main one:
+3. Install hardware acceleration related packages:
 ```
-apt remove -y vulkan-loader-generic
+pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
+```
+> [!NOTE]
+> If you got dependency or installation error after running the command then run this command:
+```
+pkg remove -y vulkan-loader-generic
+```
+After that, again install the packages:
+```
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
 ```
 4. Login into debian:
@@ -45,9 +54,10 @@ proot-distro login debian
 5. Run the following commands:
 ```
 apt update
+apt upgrade -y
 apt install -y sudo
-sudo apt install -y pulseaudio
-sudo apt install -y dbus-x11
+apt install -y pulseaudio
+apt install -y dbus-x11
 ```
 
 #### Create an user with Sudo privileges
@@ -93,31 +103,24 @@ Done, now check below for next steps
 ## Installing The Desktop & Applications <a name=desktop-debian></a>
 Make sure you've logged in debian before proceed, if didn't use `proot-distro login debian` to login
 
-Login to your user and run following command to install XFCE4 desktop:
+Login to your user and run following command to install XFCE4 desktop environment & its goodies:
 ```
 sudo apt install -y xfce4
+sudo apt install -y xfce4-goodies
 ```
 > [!NOTE]
-> This process will take a bit long. Make sure to do not AFK, after it got downloaded during installation it'll promt some questions you need to answer that using numbers on keyboard.
-
-**(Optional)** Install following packages for better functionality:
-```
-sudo apt install -y xfce4-goodies
-sudo apt install -y xfce4-terminal
-```
+> This process will take a bit long. Make sure not to go AFK. During installation, it will promt some questions you need to answer that using numbers on keyboard.
 
 Install your desired applications
 
 For example, Installing Firefox:
 ```
-apt install -y firefox-esr
+sudo apt install -y firefox-esr
 ```
 For Chromium:
 ```
-apt install -y chromium
+sudo apt install -y chromium
 ```
-> [!NOTE]
-> If it got fails for without administrative privilleges, use `sudo` at first then type command to avoid it.
 
 It's done, now check below for next steps.
 
@@ -125,7 +128,7 @@ It's done, now check below for next steps.
 <br>
 
 ## Running The Desktop <a name=run-debian></a>
-Exit from Debian using `exit` 1-2 times, and run following commands:
+Exit from Debian using `exit` command 1-2 times, and run following commands:
 ```
 pkg update
 pkg install -y x11-repo
@@ -134,7 +137,7 @@ pkg install -y pulseaudio
 ```
 Then, you just need to download the script corresponding to the Desktop you have installed, give it permissions to execute it and run it (in Termux, not in proot-distro):
 > [!NOTE]
-> Make sure to download the script at first, before proceeding. Check below section to see how you can install.
+> Make sure to download the script at first, before proceeding. Check below section to see how you can install those scripts.
 ```
 chmod +x startxfce4_debian.sh
 ./startxfce4_debian.sh
