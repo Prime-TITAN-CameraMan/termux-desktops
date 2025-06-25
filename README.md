@@ -2,9 +2,12 @@
 Install a full Linux desktop environment on your Android device with Termux X11 and also with hardware acceleration alongwith desktop audio functional
 
 The project is based on—
-- **PRoot:** Debian only, because it's beginner-friendly
-- **DE:** XFCE4 only, because it's lightweight with full desktop setup.
-- **Hardware Acceleration:** HW is inbuilt inside scripts. So, whenever you run the script for starting the desktop, it'll automatically enable hardware acceleration too. So, I didn't made any documentation for it.
+- **PRoot:** Debian & Ubuntu, because they are beginner-friendly for everyone.
+- **DE:** XFCE4, because it's lightweight with full-featured desktop environment.
+- **Hardware Acceleration:** There's no documentation for hardware acceleration, because hardware acceleration is already settled in my scripts you can install the desktop environment using following steps and the hardware acceleration shall work alongwith the desktop environment. Whenever, you run the desktop environment using my script, hardware acceleration will work too.
+> [!NOTE]
+> For native Termux: We're using Zink as hardware acceleration. So, make sure to check if your Android device supports Vulkan or not. If it supports, continue.
+> For PRoot distro: We're going to use VirGL, which is totally supported by all of Android devices
 
 ---
 <br>
@@ -37,15 +40,15 @@ We are going to use Termux and Termux X11 in order to have a full Linux Desktop 
 - [Install Termux from GitHub repository](https://github.com/termux/termux-app/releases)
 - [Install Termux X11 from last successful builds of GitHub repository](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
 
-Install Some Essential Packages In Termux at First before prceeding:
+Update & install some essential packages in Termux at first before proceeding:
 ```
-pkg update -y
+pkg update
+pkg upgrade -y
 pkg install -y x11-repo
 pkg install -y termux-x11-nightly
 pkg install -y pulseaudio
 pkg install -y proot-distro
 pkg install -y wget
-pkg install -y git
 ```
 
 ---
@@ -79,9 +82,10 @@ Proot-Distro is a method that utilizes `proot` (PRoot is a user-space implementa
 ---
 <br>
 
-## How to install proot distribution desktop: Debian <a name=proot-distributions></a>
+## How to install proot distribution desktop: Debian, Ubuntu <a name=proot-distributions></a>
 Click on the different text to see how you can install PRoot distributions of your choice.
 - **[Debian](/Documentation/proot/debian_proot.md)**
+- **[Ubuntu](/Documentation/proot/ubuntu_proot.md)**
 
 ---
 <br>
