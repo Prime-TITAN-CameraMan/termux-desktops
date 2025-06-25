@@ -25,28 +25,31 @@ This means you don’t have to manually configure anything — with one command,
 <br>
 
 ## First Steps <a name=app-first-steps></a>
-Install the following packages in Termux
+Install the following packages in Termux:
 ```
-pkg update -y
+pkg update
+pkg upgrade -y
 pkg install -y wget
+pkg install -y termux-x11-nightly
 pkg install -y x11-repo
 pkg install -y proot-distro
 pkg install -y pulseaudio
 ```
-Login to the PRoot env (e.g. Debian)
+Install your PRoot environment, and log in, if you haven't (e.g., Debian):
 ```
 proot-distro install debian
 proot-distro login debian
 ```
-Install following packages inside Debian
+Run following commands inside the distro:
 ```
-apt update -y
+apt update
+apt upgrade -y
 apt install -y sudo
-sudo apt install -y nano
-sudo apt install -y adduser
-sudo apt install -y pulseaudio
-sudo apt install -y dbus-x11
-sudo apt install -y x11-utils
+apt install -y nano
+apt install -y adduser
+apt install -y pulseaudio
+apt install -y dbus-x11
+apt install -y x11-utils
 ```
 Add a user if you didn't added yet
 ```
@@ -64,7 +67,7 @@ Then use **CTRL+X**, **Y** then **Enter**.
 
 <br>
 
-Exit through Debian using following command
+Exit through distro using following command
 ```
 exit
 ```
@@ -80,15 +83,17 @@ cd ~
 wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/proot_app.sh
 ```
 > [!NOTE]
-> By default the script only works with the user `ptcm`. So, do the following steps to fix it.
+> By default the script only works with the user `ptcm` and Debian PRoot distro. So, do the following steps to fix it.
 
 Edit the script using following command
 ```
 nano proot_app.sh
 ```
-Edit the user `ptcm` to your user which you've created inside Debian
+Edit the user `ptcm` to your user which you've created inside PRoot:
 
-Change all user or all text with `ptcm` to your user 
+Change to `your user name in proot` where it says `ptcm` in the script.
+
+And change text to `your proot distro name` everywhere where it says `debian`.
 
 After that, save the script using **CTRL + X**, **Y** then **Enter**
 
@@ -109,4 +114,9 @@ or
 ```
 bash ~/proot_app.sh application
 ```
-Replace the `application` with actual application name.
+Replace the `application` with actual application name in distro.
+
+You can run applications ven with flags, such as:
+```
+./proot_app.sh application --no-sandbox
+```
