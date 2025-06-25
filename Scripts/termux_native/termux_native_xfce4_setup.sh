@@ -10,23 +10,22 @@ cd ~
 
 echo -e "${BOLD_YELLOW}Updating and Installing Necessary Packages...\n(usually takes a minute)${RESET}"
 
-pkg update -y > /dev/null 2>&1
-pkg install -y tur-repo > /dev/null 2>&1
-pkg install -y x11-repo > /dev/null 2>&1
-pkg install -y termux-x11-nightly > /dev/null 2>&1
-pkg install -y pulseaudio > /dev/null 2>&1
+pkg update
+pkg upgrade -y
+pkg install -y x11-repo
+pkg install -y termux-x11-nightly
+pkg install -y tur-repo
+pkg install -y pulseaudio
 pkg install -y x11-utils > /dev/null 2>&1
-pkg install -y xorg-xhost > /dev/null 2>&1
-pkg install -y wget > /dev/null 2>&1
-pkg install -y curl > /dev/null 2>&1
+pkg install -y xorg-xhost
+pkg install -y wget
 
 echo -e "${BOLD_GREEN}Packages Updated and Installed Successfully!${RESET}"
 
 sleep 1
 
 echo -e "${BOLD_YELLOW} Configuring HW Acceleration: Removing conflicting packages and reinstalling the working packages${RESET}"
-apt remove -y mesa-zink vulkan-loader-generic > /dev/null 2>&1
-pkg clean -y > /dev/null 2>&1
+pkg remove -y vulkan-loader-generic > /dev/null 2>&1
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android > /dev/null 2>&1
 
 while true; do
@@ -41,22 +40,22 @@ while true; do
     1)
       echo -e "${BOLD_GREEN}Installing Firefox...\n(usually takes few moments)${RESET}"
       pkg update > /dev/null 2>&1
-      pkg install -y firefox > /dev/null 2>&1
+      pkg install -y firefox
       echo -e "${BOLD_GREEN}Firefox Installed Successfully!${RESET}"
       break
       ;;
     2)
       echo -e "${BOLD_GREEN}Installing Chromium...\n(usually takes few minutes)${RESET}"
       pkg update > /dev/null 2>&1
-      pkg install -y chromium > /dev/null 2>&1
+      pkg install -y chromium
       echo -e "${BOLD_GREEN}Chromium Installed Successfully!${RESET}"
       break
       ;;
     3)
       echo -e "${BOLD_GREEN}Installing Firefox and Chromium (both)...\n(usually takes 5-10 minutes, depending on internet speed)${RESET}"
       pkg update > /dev/null 2>&1
-      pkg install -y firefox > /dev/null 2>&1
-      pkg install -y chromium > /dev/null 2>&1
+      pkg install -y firefox
+      pkg install -y chromium
       echo -e "${BOLD_GREEN}Firefox and Chromium Installed Successfully!${RESET}"
       break
       ;;
@@ -69,10 +68,12 @@ done
 sleep 1
 
 echo -e "${BOLD_GREEN}Installing XFCE4 Desktop and Its Goodies...\n(usually takes 3-15 minutes depending on internet speed and device specifications)${RESET}"
-pkg install -y xfce4 > /dev/null 2>&1
-pkg install -y xfce4-goodies > /dev/null 2>&1
+pkg install -y xfce4
+pkg install -y xfce4-goodies
 pkg install -y xfce4-taskmanager > /dev/null 2>&1
 pkg install -y xfce4-terminal > /dev/null 2>&1
+pkg install -y thunar-archive-plugin > /dev/null 2>&1
+pkg install -y file-roller > /dev/null 2>&1
 
 cd ~
 
