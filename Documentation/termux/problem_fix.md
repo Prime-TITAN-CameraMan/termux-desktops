@@ -13,7 +13,8 @@
 1. Install **[Termux API](https://github.com/termux/termux-api/releases)** from their official **[GitHub repository](https://github.com/termux/termux-api/releases)**
 2. Open Termux, run the following commands:
 ```
-pkg update -y
+pkg update
+pkg upgrade -y
 pkg install -y termux-api
 ```
 
