@@ -8,7 +8,7 @@
 <br>
 
 ## Key Features <a name=key-features></a>
-- **Easy Setup:** Easy 1-click installation process.
+- **Easy Setup:** Easy auto installation process.
 - **Hardware Acceleration:** Performance boost using your supported hardware.
 - **Audio Support:** Desktop audio functional
 - **GUI:** Termux X11
@@ -29,7 +29,7 @@
 - [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
 - [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
 - Minimum 2GB of RAM; Recommended 3GB of RAM
-- 500MB - 700MB of internet
+- 500MB - 600MB of internet
 - Minimum 4GB of storage; Recommended 5.50GB of storage
 
 ---
@@ -38,7 +38,8 @@
 ## Installtation Steps <a name=termux-auto-install></a>
 Run the following commands in Termux:
 ```
-pkg update -y
+pkg update
+pkg upgrade -y
 pkg install -y wget
 ```
 Download TCM's automated setup script:
@@ -46,25 +47,25 @@ Download TCM's automated setup script:
 cd ~
 wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/termux_native_xfce4_setup.sh
 ```
+I'm not sure, what's the line break of the script. So, it's safe & necessary to Install `dos2unix` and convert the script for Linux line break.
+```
+pkg install -y dos2unix
+dos2unix termux_native_xfce4_setup.sh
+```
 Give executive permission to the script:
 ```
 chmod +x termux_native_xfce4_setup.sh
 ```
-Install `dos2unix`
-```
-pkg install -y dos2unix
-```
 Run the script:
 ```
-dos2unix termux_native_xfce4_setup.sh
 bash ~/termux_native_xfce4_setup.sh
 ```
 
 > [!NOTE]
-> This installation will take some time. So, be patience. Also it'll promt to enter a number for your desired browser installation.
+> This installation will take some time. So, be patience. Also it'll promt to enter keyboard layout and your desired browser. So, make sure not to go AFK.
 
 > [!WARNING]
-> It can cause slight screen tearing as the V-Sync in turned off, while the tearing is minimal or unnoticable if you've a moderate-good GPU
+> the desktop environment can cause slight screen tearing as the V-Sync in turned off, while the tearing is minimal or unnoticable if you've a moderate-good GPU
 
 ---
 <br>
