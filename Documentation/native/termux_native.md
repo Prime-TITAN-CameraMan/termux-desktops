@@ -12,9 +12,9 @@
 - Android version must be 8+
 - [Termux](https://github.com/termux/termux-app/releases)
 - [Termux X11](https://github.com/termux/termux-x11/actions/workflows/debug_build.yml)
-- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features)
+- [Termux API](https://github.com/termux/termux-api/releases) (Optional, only for additional features, such as microphone)
 - Minimum 2GB of RAM; Recommended 3GB of RAM
-- 500MB - 700MB of internet
+- 400MB - 600MB of internet
 - Minimum 4GB of storage; Recommended 5.50GB of storage
 
 ---
@@ -30,44 +30,57 @@ Make sure you've both Termux and Termux X11 installed. If didn't, install it fro
 First install following packages in Termux:
 ```
 pkg update
-pkg install x11-repo
-pkg install termux-x11-nightly
-pkg install pulseaudio
-pkg install tur-repo
+pkg upgrade -y
+pkg install -y x11-repo
+pkg install -y termux-x11-nightly
+pkg install -y pulseaudio
+pkg install -y tur-repo
 ```
 Then remove conflicting packages and install the main packages:
 **(Part of Hardware Acceleration)**
 ```
-apt remove -y vulkan-loader-generic
+pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
+```
+> [!NOTE]
+> If you having dependency or installation error, then run this:
+```
+pkg remove -y vulkan-loader-generic
+```
+after that, install the packages again:
+```
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
 ```
 Then you have to install XFCE4 desktop:
 > [!NOTE]
 > XFCE4 is really small and efficient which makes it take the least amount of resources compared to other desktop environments.
 ```
-pkg install -y xfce4
+pkg install xfce4
 ```
 If you want to install Firefox: <a name=apps-install-termux></a>
 ```
-pkg install -y firefox
+pkg install tur-repo
+pkg install firefox
 ```
 If you want to install Chromium:
 ```
-pkg install -y chromium
+pkg install tur-repo
+pkg install chromium
 ```
 If you want to install VS Code:
 ```
-pkg install -y code-oss
+pkg install tur-repo
+pkg install code-oss
 ```
-There are a lot of applications, you can add more applications by adding tur repository using `pkg install -y tur-repo` in Termux.
+There are a lot of applications in `TUR` repository, but it's community based. So, be cautious before installing any unknown packages, though `chromium` & `code-oss` are safe, and the repository is trustworthy enough.
 
 ---
 <br>
 
 ## Download script to start desktop environment: <a name=script-download-termux></a>
 
-- startxfce4_termux.sh
+-  startxfce4_termux.sh
 ```
+cd ~
 wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/startxfce4_termux.sh
 ```
 
