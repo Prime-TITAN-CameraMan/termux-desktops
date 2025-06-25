@@ -55,6 +55,10 @@ Then you have to install XFCE4 desktop:
 ```
 pkg install xfce4
 ```
+**Optional** install XFCE4 goodies for further desktop tweaks:
+```
+pkg install -y xfce4-goodies
+```
 If you want to install Firefox: <a name=apps-install-termux></a>
 ```
 pkg install tur-repo
