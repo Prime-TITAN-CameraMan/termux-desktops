@@ -155,7 +155,7 @@ chmod +x startxfce4_ubuntu.sh
 > Make sure to install the scripts in native Termux, not in PRoot.
 ```
 cd ~
-wget later
+wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/proot_ubuntu/startxfce4_ubuntu.sh
 ```
 Now run the script in native Termux (Not In PRoot), whenever you want to use the desktop. 
 
