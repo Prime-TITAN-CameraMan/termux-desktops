@@ -6,8 +6,9 @@ The project is based on—
 - **DE:** XFCE4, because it's lightweight with full-featured desktop environment.
 - **Hardware Acceleration:** There's no documentation for hardware acceleration, because hardware acceleration is already settled in my scripts you can install the desktop environment using following steps and the hardware acceleration shall work alongwith the desktop environment. Whenever, you run the desktop environment using my script, hardware acceleration will work too.
 > [!NOTE]
-> For native Termux: We're using Zink as hardware acceleration. So, make sure to check if your Android device supports Vulkan or not. If it supports, continue.
-> For PRoot distro: We're going to use VirGL, which is totally supported by all of Android devices
+> **For native Termux:** We're using Zink as hardware acceleration. So, make sure to check if your Android device supports Vulkan or not. If it supports, continue.
+
+> **For PRoot distro:** We're going to use VirGL, which is totally supported by all of Android devices
 
 ---
 <br>
