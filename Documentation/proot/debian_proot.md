@@ -47,7 +47,7 @@ After that, again install the packages:
 ```
 pkg install -y mesa-zink virglrenderer-mesa-zink vulkan-loader-android virglrenderer-android
 ```
-4. Login into debian:
+4. Login into Debian:
 ```
 proot-distro login debian
 ```
@@ -63,8 +63,8 @@ apt install -y dbus-x11
 #### Create an user with Sudo privileges
 1. Install the following package:
 ```
-sudo apt install -y nano
-sudo apt install -y adduser
+apt install -y nano
+apt install -y adduser
 ```
 2. Create a user:
 > [!NOTE]
@@ -101,7 +101,7 @@ Done, now check below for next steps
 <br>
 
 ## Installing The Desktop & Applications <a name=desktop-debian></a>
-Make sure you've logged in debian before proceed, if didn't use `proot-distro login debian` to login
+Make sure you've logged in Debian before proceeding. If didn't, use `proot-distro login debian` to login
 
 Login to your user and run following command to install XFCE4 desktop environment & its goodies:
 ```
@@ -128,7 +128,7 @@ It's done, now check below for next steps.
 <br>
 
 ## Running The Desktop <a name=run-debian></a>
-Exit from Debian using `exit` command 1-2 times, and run following commands:
+Exit from Debian using `exit` command 1-2 times, then run following commands:
 ```
 pkg update
 pkg install -y x11-repo
@@ -149,13 +149,15 @@ chmod +x startxfce4_debian.sh
 ## Download Desktop Launching Scripts Easily <a name=script-debian></a>
 > [!NOTE]
 > By default this script works with the user `ptcm`. If you create a user with a different name in proot-distro, please edit the script change the user where it says `ptcm` inside the scripts.
+> 
 > Use `nano startxfce4_debian.sh` to edit the script.
+> 
 > Make sure to install the scripts in Termux, not PRoot.
 ```
 cd ~
 wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/proot_debian/startxfce4_debian.sh
 ```
-Now run the script in Termux native (Not In PRoot), whenever you want to use the desktop. 
+Now run the script on native Termux (Not In PRoot), whenever you want to use the desktop. 
 
 ---
 <br>
