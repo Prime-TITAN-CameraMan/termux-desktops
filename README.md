@@ -120,5 +120,5 @@ To install the desktop without any kind of commands running work, click on the 1
 
 **This project is inspired by:**
 
-- [@sabamdarif](https://github.com/sabamdarif)'s [termux-desktop](https://github.com/sabamdarif/termux-desktop) repository  
-- [@LinuxDroidMaster](https://github.com/LinuxDroidMaster)'s [Termux-Desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) repository
+- [@sabamdarif](https://github.com/sabamdarif)'s [termux-desktop](https://github.com/sabamdarif/termux-desktop) repository: Licensed under [GNU GPL v3.0](https://github.com/sabamdarif/termux-desktop/blob/main/LICENSE)
+- [@LinuxDroidMaster](https://github.com/LinuxDroidMaster)'s [Termux-Desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) repository: Licensed under [GNU GPL v3.0](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/LICENSE)
