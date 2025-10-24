@@ -78,11 +78,16 @@ pkg install -y file-roller > /dev/null 2>&1
 cd ~
 
 echo -e "${BOLD_GREEN}Installing TCM's Script to Launch The Desktop...${RESET}"
-wget https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/startxfce4_termux.sh
+wget -O startxfce4.sh https://raw.githubusercontent.com/Prime-TITAN-CameraMan/termux-desktops/refs/heads/main/Scripts/termux_native/startxfce4_termux.sh
 
 echo -e "${BOLD_GREEN}Granting Execution Permission to The Script...${RESET}"
-chmod +x startxfce4_termux.sh
+chmod +x startxfce4.sh
 
-echo -e "${BOLD_CYAN}Use ./startxfce4_termux.sh to launch the desktop.${RESET}"
+mkdir -p $PREFIX/bin
+mv startxfce4.sh $PREFIX/bin/startxfce4
+clear
 
+echo -e "${BOLD_CYAN}You can now launch the desktop by typing:${RESET}"
+echo -e "${BOLD_YELLOW}startxfce4${RESET}"
 exit
+
