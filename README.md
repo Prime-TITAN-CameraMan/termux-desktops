@@ -1,14 +1,10 @@
-# Termux Desktops: Full Linux GUI on Android with Hardware Acceleration
+# Termux Desktop: Full Linux GUI on Android with Hardware Acceleration
 Install a full Linux desktop environment on your Android device with Termux X11 and also with hardware acceleration alongwith desktop audio functional
 
-The project is based on—
-- **PRoot:** Debian & Ubuntu, because they are beginner-friendly for everyone.
-- **DE:** XFCE4, because it's lightweight with full-featured desktop environment.
-- **Hardware Acceleration:** There's no documentation for hardware acceleration, because hardware acceleration is already settled in my scripts you can install the desktop environment using following steps and the hardware acceleration shall work alongwith the desktop environment. Whenever, you run the desktop environment using my script, hardware acceleration will work too.
-> [!NOTE]
-> **For native Termux:** We're using Zink as hardware acceleration. So, make sure to check if your Android device supports Vulkan or not. If it supports, continue.
->
-> **For PRoot distro:** We're going to use VirGL, which is totally supported by all of Android devices
+###### The project uses:
+- **Desktop Environment** — we are going to use XFCE4, it is a full functional, lightweight, modern desktop environment, in this process we're going to use this.
+- **Hardware Acceleration** — for getting hardware acceleration we are going to use Zink, make sure your device supports Vulkan. If not or you are using a Qualcomm Snapdragon SoC-based device then check:
+[DroidMaster's Hardware Acceleration Setup](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/Documentation/HardwareAcceleration.md)
 
 ---
 <br>
@@ -118,7 +114,9 @@ To install the desktop without any kind of commands running work, click on the 1
 
 ## Credits & Inspiration
 
-**This project is inspired by:**
+**This project contains some material from:**
 
 - [@sabamdarif](https://github.com/sabamdarif)'s [termux-desktop](https://github.com/sabamdarif/termux-desktop) repository: Licensed under [GNU GPL v3.0](https://github.com/sabamdarif/termux-desktop/blob/main/LICENSE)
 - [@LinuxDroidMaster](https://github.com/LinuxDroidMaster)'s [Termux-Desktops](https://github.com/LinuxDroidMaster/Termux-Desktops) repository: Licensed under [GNU GPL v3.0](https://github.com/LinuxDroidMaster/Termux-Desktops/blob/main/LICENSE)
+
+**Thanks to them!**
