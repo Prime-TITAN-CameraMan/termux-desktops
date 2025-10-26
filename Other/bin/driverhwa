@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ -n "$1" && -n "$2" ]]; then
+  driver="$1"
+  shift
+  export GALLIUM_DRIVER="$driver"
+  "$@"
+else
+  echo "Usage: driverhwa <driver> <command> [args...]"
+  echo
+  echo "Example:"
+  echo "  driverhwa zink chromium --no-sandbox"
+fi

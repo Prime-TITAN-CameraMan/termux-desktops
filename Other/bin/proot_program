@@ -1,0 +1,33 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Set environment variables globally in the shell
+export DISPLAY=:0
+export MESA_NO_ERROR=1
+export MESA_GL_VERSION_OVERRIDE=4.3COMPAT
+export MESA_GLES_VERSION_OVERRIDE=3.2
+export GALLIUM_DRIVER=zink
+export ZINK_DESCRIPTORS=lazy
+export vblank_mode=0
+export MESA_NO_WAIT_FOR_VBLANK=1
+export LIBGL_DRI3_ENABLE=1
+
+# Check if app name is given
+if [ -z "$1" ]; then
+  echo "Usage: $0 <app-name> [args]"
+  exit 1
+fi
+
+# Run the app inside Debian PRoot as user 
+proot-distro login ubuntu --shared-tmp -- \
+  env DISPLAY=$DISPLAY \
+      PULSE_SERVER=127.0.0.1 \
+      XDG_RUNTIME_DIR=${TMPDIR} \
+      MESA_NO_ERROR=$MESA_NO_ERROR \
+      MESA_GL_VERSION_OVERRIDE=$MESA_GL_VERSION_OVERRIDE \
+      MESA_GLES_VERSION_OVERRIDE=$MESA_GLES_VERSION_OVERRIDE \
+      GALLIUM_DRIVER=$GALLIUM_DRIVER \
+      ZINK_DESCRIPTORS=$ZINK_DESCRIPTORS \
+      vblank_mode=$vblank_mode \
+      MESA_NO_WAIT_FOR_VBLANK=$MESA_NO_WAIT_FOR_VBLANK \
+      LIBGL_DRI3_ENABLE=$LIBGL_DRI3_ENABLE \
+      "$@"
