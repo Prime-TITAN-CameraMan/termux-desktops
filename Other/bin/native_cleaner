@@ -1,0 +1,38 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+set -e
+echo " Bhai Termux Native Cleanup Started..."
+apt update
+apt upgrade -y
+
+echo "Bhai cleaning..."
+apt clean
+apt autoclean
+apt autoremove -y
+
+echo "Bhai removing shell history..."
+rm -r ~/.bash_history
+rm -f ~/.zcompdump* 2>/dev/null
+
+echo "Bhai cleaning caches..."
+rm -rf ~/.cache/thumbnails/* 2>/dev/null
+rm -rf ~/.cache/mozilla/* 2>/dev/null
+rm -rf ~/.mozilla/*/*/cache2/* 2>/dev/null
+
+echo "Bhai removing temp files..."
+rm -rf ${TMPDIR:-/data/data/com.termux/files/usr/tmp}/* 2>/dev/null
+rm -rf /data/data/com.termux/files/usr/tmp/* 2>/dev/null
+rm -rf ~/.cache/*
+rm -rf /tmp/*
+rm -rf /data/data/com.termux/files/usr/tmp/*
+rm -rf /var/cache/apt/archives/*
+rm -rf ~/usr/var/cache/apt/archives/*
+rm -rf ~/usr/tmp/*
+find /data/data/com.termux/files/usr/var/log -type f -delete
+rm -rf ~/.local/share/Trash/*
+rm -rf ~/.local/share/recently-used.xbel
+
+apt update
+apt upgrade -y
+
+echo "Bhai Native Termux cleanup done."
